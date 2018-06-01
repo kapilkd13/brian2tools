@@ -52,6 +52,8 @@ before_install:
     fi;
     python setup.py sdist;
   fi
+- sudo apt-get -qq update
+- sudo apt-get install -y lxml
 
 # command to install dependencies
 install:
