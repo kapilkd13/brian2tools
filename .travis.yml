@@ -57,6 +57,7 @@ before_install:
 install:
   - conda update --yes conda
   - conda install --yes --quiet anaconda-client conda-build
+  - conda config --add channels conda-forge
 
 # Build documentation or build conda package and run tests
 script:
@@ -69,8 +70,6 @@ script:
   else
     export SRCDIR=$(pwd);
     conda build --quiet -c brian-team dev/conda-recipe;
-    conda install -c conda-forge libneuroml;
-    conda list;
   fi
 
 after_success:
