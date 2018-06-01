@@ -69,8 +69,8 @@ script:
   else
     export SRCDIR=$(pwd);
     conda build --quiet -c brian-team dev/conda-recipe;
-    pip install -q libneuroml;
-    pip freeze;
+    conda install -q libneuroml;
+    conda list;
   fi
 
 after_success:
