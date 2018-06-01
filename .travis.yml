@@ -57,7 +57,6 @@ before_install:
 install:
   - conda update --yes conda
   - conda install --yes --quiet anaconda-client conda-build
-  - pip install libNeuroML
 
 # Build documentation or build conda package and run tests
 script:
