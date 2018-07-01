@@ -19,6 +19,8 @@ test:
     - brian2tools.plotting
     - brian2tools.nmlexport
     - brian2tools.nmlimport
+    - brian2tools.tests.samples
+    - brian2tools.tests.samples.sample1.cell.nml
 
   commands:
     - MPLBACKEND=Agg py.test --pyargs brian2tools

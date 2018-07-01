@@ -18,7 +18,7 @@ POINTS = ((0, 'soma', 0.0, 0.0, 0.0, 23.0, -1),
           (8, 'unknown', 106.07, -156.07, 0.0, 5.0, 7),
           (9, 'unknown', -106.07, -156.07, 0.0, 5.0, 7))
 
-SAMPLE = "../nmlimport/sample.nml"
+SAMPLE = "samples/sample1.cell.nml"
 
 
 # def get_nml_file(file):
